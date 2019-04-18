@@ -1,35 +1,148 @@
-/* Style the tab */
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Futura","Verdana", Sans-serif;
+    font-size:1em;
 }
 
-/* Style the buttons that are used to open the tab content */
+/* hero + title*/
+
+h1{
+    font-family: "Futura","Verdana", Sans-serif;
+    font-size: 6em;
+    position: absolute;
+    padding-left: 7vw;
+
+    bottom: 10vh;    
+}
+
+h2{
+    font-family: "Futura","Verdana", Sans-serif;
+    font-size: 3em;
+    color: white;
+    position: absolute;
+    padding-left: 58vw;
+    bottom: 1em;
+}
+
+h3{
+    font-family: "Futura","Verdana", Sans-serif;
+    font-size: 2em;
+    position: absolute;
+}
+
+h4{
+    font-family: "Futura","Verdana", Sans-serif;
+    font-size: 1em;
+}
+
+p{
+    font-family: "Futura Lt BT";
+    font-style: italic;
+}
+
+.hero-image{
+    background-image: url(images/19621161_879663335519635_313697108232587423_o.jpg);
+    height:50vh;
+    background-size:cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.titel-highlight{
+    height: 11vh;
+    background-color: #0455bf;
+    position: absolute;
+    bottom: 5em;
+    width: 100%;
+}
+
+
+/* tabs */
+
+.tabprojects{
+    margin: 240px;
+}
+
 .tab button {
-  background-color: inherit;
-  float: left;
+  background-color:rgba(76, 175, 80, 0);
+  margin: 0px;
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 0px 20px;
   transition: 0.3s;
 }
 
-/* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #ddd;
+
 }
 
-/* Create an active/current tablink class */
 .tab button.active {
-  background-color: #ccc;
+
 }
 
-/* Style the tab content */
+.tabimage{
+    width: 280px;
+    height: 160px;
+    object-fit: cover;
+    position: absolute;
+    bottom: 100px;
+    left: 240px;
+}
+
+#tabimage2{
+    left: 560px;
+}
+
+#tabimage3{
+    left: 880px;
+}
+.tabBG{
+    width: 280px;
+    height: 150px;
+    background-color:#f24405;
+    position: absolute;
+    bottom: 80px;
+    left: 250px;
+}
+
+
+
 .tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
+  width:1090px;
+  height: 500px;
+  margin-left: -60px;
+  background-color: #f24405;
+}
+
+.tabtext{
+    position: absolute;
+    margin: 60px;
+    margin-left: 120px;
+}
+
+.tabtagline{
+    width: 500px;
+}
+
+.tabcontent p{
+    width: 300px;
+    margin-top: 20px;
+}
+
+.tabvideo{
+    width: 500px;
+    height: auto;
+    position:absolute;
+    left: 320px;
+    bottom: -110px;
+}
+
+.whiteBG{
+    position: absolute;
+    margin-left: 60px;
+    background-color: white;
+    width: 629px;
+    height:450px;
 }
