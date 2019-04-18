@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -6,24 +6,58 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
+
+      <!-- Hero Image & Title -->
     <section class="hero">
-      <h1>Bas Smolders video's</h1>
       <div class="hero-image">
-      </div>
+      <div class="titel-highlight"></div>
+      <h1>VIDEOPRODUCTIE</h1>
+      <h2>Bas Smolders</h2>
+           </div>
     </section>
-    <section class="tab-projects">
+
+    <!-- Project Tab -->
+    <section class="tabprojects">
 
       <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'London')">Project 1</button>
-        <button class="tablinks" onclick="openCity(event, 'Paris')">Project 2</button>
-        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Project 3</button>
+        <button class="tablinks" onclick="openCity(event, 'project1')" id="defaultOpen">
+          <div class="tabBG"></div>
+            <img src="images/ThumbAGB.jpg" class="tabimage">
+            <h3>AGB <br> VERKIEZING</h3>
+          </button>
+          
+        <button class="tablinks" onclick="openCity(event, 'project2')">            
+           <div class="tabBG"></div>
+            <img src="images/ThumbDjoser.jpg" class="tabimage" id="tabimage2">
+            <h3>DJOSER <br> RONDREIS</h3>
+          </button>
+          
+        <button class="tablinks" onclick="openCity(event, 'project3')">
+            <div class="tabBG"></div>
+            <img src="images/ThumbBattle.jpg" class="tabimage" id="tabimage3">
+            <h3>BATTLE <br> OF THE Q-BANDS</h3>
+          </button>
       </div>
 
-      <!-- Tab content -->
+      <!-- Tab Content -->
 
       <div id="project1" class="tabcontent">
-        <h3>London</h3>
-        <p>London is the capital city of England.</p>
+        
+        <div class="whiteBG"></div>
+        
+        <div class="tabtext">
+            
+            <h3>AGB Verkiezing</h3>
+
+        <h4 class="tabtagline">Meerdere jaren heb ik AGB partijen voorzien van filmpjes voor de verkiezingen, schoolfeesten en plannen rondom het schoolbeleid.</h4>
+        <p>De Algemene Gymnasiasten Bond is een bond bestaande uit leerlingen van het Stedelijk Gymnasium Arnhem, die inspraak hebben in het schoolbestuur. </p>
+        <p>Jaarlijks stellen zich nieuwe partijen verkiesbaar, die in een filmpje hun standpunten begrijpelijk en aantrekkelijk willen presenteren.</p>
+            
+            <video controls class="tabvideo">
+                <source src="images/vlc-record-2019-02-24-12h42m28s-De%20kauwgom%20challenge.mp3-.mp4" type="video/mp4">
+            </video>
+            </div>
+
       </div>
 
       <div id="project2" class="tabcontent">
@@ -35,8 +69,33 @@
         <h3>Tokyo</h3>
         <p>Tokyo is the capital of Japan.</p>
       </div>
-
-
     </section>
+
+        <!-- Testimonials -->
+
+    <section class="testimonials">
+      <div class="quote"> </div>
+        <div class="quote"> </div>
+    </section>
+
+      <!-- About Me -->
+    <section class="about-me">
+
+      </section>
+
+        <!-- Contact -->
+    <section class="contact">
+
+      </section>
+
+        <!-- Footer -->
+    <section class="footer">
+
+      </section>
+
   </body>
+
+    <footer>
+        <script src="javascript.js"></script>
+    </footer>
 </html>
